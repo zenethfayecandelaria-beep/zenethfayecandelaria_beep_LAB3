@@ -1,0 +1,102 @@
+/* 1. Global Reset & Box Sizing */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Poppins', sans-serif;
+background-color: #f0f2f5;
+color: #333;
+}
+/* 2. Main Page Layout - Centering Canvas via Flexbox */
+.card-container {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+padding: 20px;
+}
+/* 3. Card Structure & Box Model Constraints */
+.profile-card {
+background-color: #ffffff;
+width: 100%;
+max-width: 380px;
+border-radius: 16px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+padding: 30px;
+text-align: center;
+transition: transform 0.3s ease;
+}
+.profile-card:hover {
+transform: translateY(-5px);
+}
+/* 4. Header Details & Circular Image Masking */
+.profile-img {
+width: 110px;
+height: 110px;
+border-radius: 50%;
+object-fit: cover;
+border: 4px solid #4f46e5;
+
+margin-bottom: 15px;
+}
+.profile-name {
+font-size: 1.5rem;
+font-weight: 600;
+color: #1f2937;
+}
+.profile-title {
+font-size: 0.9rem;
+color: #4f46e5;
+font-weight: 400;
+margin-top: 4px;
+}
+/* 5. Content Styling */
+.profile-bio {
+font-size: 0.85rem;
+color: #6b7280;
+line-height: 1.6;
+margin: 20px 0;
+}
+/* 6. Footer Analytics Component (Flexbox Row Layout) */
+.card-footer {
+display: flex;
+justify-content: space-around;
+border-top: 1px solid #e5e7eb;
+border-bottom: 1px solid #e5e7eb;
+padding: 15px 0;
+margin-bottom: 25px;
+}
+.stat-box {
+display: flex;
+flex-direction: column;
+}
+.stat-number {
+font-size: 1.1rem;
+font-weight: 600;
+color: #1f2937;
+}
+.stat-label {
+font-size: 0.75rem;
+color: #9ca3af;
+text-transform: uppercase;
+
+letter-spacing: 0.5px;
+}
+/* 7. Action Button Design */
+.action-btn {
+background-color: #4f46e5;
+color: white;
+border: none;
+width: 100%;
+padding: 12px 0;
+font-size: 0.95rem;
+font-weight: 600;
+border-radius: 8px;
+cursor: pointer;
+transition: background-color 0.2s ease;
+}
+.action-btn:hover {
+background-color: #4338ca;
+}
